@@ -12,23 +12,34 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-        List(sandwiches) { sandwich in
-            SandwichCell(sandwich: sandwich)}
-    }
+            List {
+                ForEach(sandwiches) { sandwich in
+                    SandwichCell(sandwich: sandwich)}
+                
+                HStack{
+                    Spacer()
+                    Text("\(sandwiches.count) Sandwiches")
+                        .foregroundColor(.secondary)
+                    Spacer()
+                }
+            }
+        }
         .navigationTitle("Sandwiches")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(sandwiches: testData)
+        NavigationView{
+            ContentView(sandwiches: testData)
+        }
     }
 }
 
 struct SandwichCell: View {
     var sandwich: Sandwich
     var body: some View {
-        NavigationLink(destination: Text(sandwich.name)){
+        NavigationLink(destination: SandwichDetail(sandwich: sandwich)){
             Image(sandwich.thumbnailName)
                 .cornerRadius(8)
             VStack(alignment:.leading) {
