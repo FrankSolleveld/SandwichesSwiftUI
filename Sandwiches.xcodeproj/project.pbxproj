@@ -13,6 +13,10 @@
 		95D1992024BE00E900219FB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1990B24BE00E800219FB3 /* ContentView.swift */; };
 		95D1992124BE00E900219FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D1990C24BE00E800219FB3 /* Assets.xcassets */; };
 		95D1992224BE00E900219FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D1990C24BE00E800219FB3 /* Assets.xcassets */; };
+		95D1992C24BE02FB00219FB3 /* Sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1992B24BE02FB00219FB3 /* Sandwich.swift */; };
+		95D1992D24BE02FB00219FB3 /* Sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1992B24BE02FB00219FB3 /* Sandwich.swift */; };
+		95D1993224BE080300219FB3 /* Sandwich.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D1993124BE080300219FB3 /* Sandwich.xcassets */; };
+		95D1993324BE080300219FB3 /* Sandwich.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D1993124BE080300219FB3 /* Sandwich.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		95D1991924BE00E900219FB3 /* Sandwiches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandwiches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D1991B24BE00E900219FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95D1991C24BE00E900219FB3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		95D1992B24BE02FB00219FB3 /* Sandwich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandwich.swift; sourceTree = "<group>"; };
+		95D1993124BE080300219FB3 /* Sandwich.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sandwich.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,9 @@
 			children = (
 				95D1990A24BE00E800219FB3 /* SandwichesApp.swift */,
 				95D1990B24BE00E800219FB3 /* ContentView.swift */,
+				95D1992B24BE02FB00219FB3 /* Sandwich.swift */,
 				95D1990C24BE00E800219FB3 /* Assets.xcassets */,
+				95D1993124BE080300219FB3 /* Sandwich.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D1993224BE080300219FB3 /* Sandwich.xcassets in Resources */,
 				95D1992124BE00E900219FB3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D1993324BE080300219FB3 /* Sandwich.xcassets in Resources */,
 				95D1992224BE00E900219FB3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +199,7 @@
 			files = (
 				95D1991F24BE00E900219FB3 /* ContentView.swift in Sources */,
 				95D1991D24BE00E900219FB3 /* SandwichesApp.swift in Sources */,
+				95D1992C24BE02FB00219FB3 /* Sandwich.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +209,7 @@
 			files = (
 				95D1992024BE00E900219FB3 /* ContentView.swift in Sources */,
 				95D1991E24BE00E900219FB3 /* SandwichesApp.swift in Sources */,
+				95D1992D24BE02FB00219FB3 /* Sandwich.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
