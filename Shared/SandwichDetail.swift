@@ -47,9 +47,6 @@ struct SandwichDetail_Previews: PreviewProvider {
             NavigationView{
                 SandwichDetail(sandwich: testData[0])
             }
-            NavigationView{
-                SandwichDetail(sandwich: testData[1])
-            }
         }
     }
 }
