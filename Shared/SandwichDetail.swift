@@ -37,7 +37,7 @@ struct SandwichDetail: View {
             }
         }
         .navigationTitle(sandwich.name)
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
