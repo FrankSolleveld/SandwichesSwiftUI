@@ -25,17 +25,19 @@ struct ContentView: View {
                     Spacer()
                 }
             }
+            
+            .navigationTitle("Sandwiches")
+            .toolbar {
+                #if os(iOS)
+                EditButton()
+                #endif
+                Button("Add", action: makeSandwich)
+            }
+            
+            Text("Select a sandwich.")
+                .font(.largeTitle)
+            
         }
-        .navigationTitle("Sandwiches")
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-            Button("Add", action: makeSandwich)
-        }
-        
-        Text("Select a sandwich.")
-            .font(.largeTitle)
     }
     
     func makeSandwich() {
