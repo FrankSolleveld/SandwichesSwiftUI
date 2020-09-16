@@ -9,10 +9,12 @@ import SwiftUI
 
 struct SandwichDetail: View {
     var sandwich: Sandwich
+    @State private var zoomed = false
     var body: some View {
         Image(sandwich.imageName)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: zoomed ? .fill : .fit)
+            .onTapGesture{ zoomed.toggle() }
             .navigationTitle(sandwich.name)
     }
 }
